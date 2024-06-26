@@ -184,19 +184,24 @@ button:hover {
     background-color: #444;
 }
 
-footer{
+footer {
     background: black;
-    padding: 20px 0 20px 30px;
+    padding: 13px 0 13px 30px;
     color: #cccccc;
-}
-footer p{
-    font-size: 10px;
+    position: relative;
+    /* Ensure it's relative to the body */
+    clear: both;
+    /* Clear floats */
 }
 
 .social-icon {
     color: #cccccc;
-    font-size: 6px;
     margin-left: 20px;
+}
+
+.copyright {
+    font-size: 12px;
+    margin-left: 25px;
 }
 
 .all-about{
