@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>thandophotography</title>
-    <link rel="stylesheet" href="src/index.css">
+    <link rel="stylesheet" href="src/about.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Open+Sans:wght@500&display=swap"
@@ -14,6 +14,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Open+Sans:wght@500&display=swap"
         rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Montserrat:wght@300&family=Open+Sans:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Montserrat:wght@300&family=Open+Sans:ital@0;1&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body class="photography">
@@ -26,8 +37,8 @@
         <div class="details">
             <nav>
                 <ul class="tabs">
-                    <li><a href="index.html">home</a></li>
-                    <li>
+                    <li class="tab"><a href="index.html">home</a></li>
+                    <li class="portfolio-tab tab">
                         <a href="portfolio.html">portfolio</a>
                         <ul class="portfolio-tab">
                             <li><a href="photography.html">Wedding</a></li>
@@ -36,15 +47,53 @@
                             <li><a href="art.html">Family</a></li>
                         </ul>
                     </li>
-                    <li><a href="about.html">about</a></li>
-                    <li><a href="contact.html">contact</a></li>
+                    <li><a href="about.html" class="tab">about</a></li>
+                    <li><a href="contact.html" class="tab">contact</a></li>
                 </ul>
             </nav>
         </div>
 
     </header>
 
+<div class="all-about">
+    <div class="about-container">
+        <div class="about-details">
+            <span class="occupation">Photographer</span>
+            <br>
+            <span class="name">Nothando Makeke</span>
+            <br>
+            <span class="description">I am a portrait photographer based in Los Angeles,
+                <br>
+                and I've been in the business for over 10 years. I specialize in
+                <br>
+                capturing natural moments and emotions, and I believe that everyone
+                <br>
+                has a story worth telling. I'm passionate about my work, and I strive
+                <br>
+                to create images that are both beautiful and meaningful.</span>
 
+            <div class="button-container">
+                <button><a href="contact.html"></a>Contact Me</button>
+            </div>
+        </div>
+
+        <div class="image">
+            <img src="nothando-about.jpg" alt="" class="about-img">
+        </div>
+    </div>
+    </div>
+
+    <footer>
+    
+        <a href="https://www.instagram.com/your-instagram-handle/" target="_blank" class="social-icon">
+            <i style="font-size:24px" class="fa">&#xf16d;</i>
+        </a>
+        <p>&copy; thandophotography. All rights reserved.</p>
+    </footer>
+
+    <script src="src/index.js"></script>
 </body>
+
+
 
 </html>
