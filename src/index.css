@@ -119,7 +119,7 @@ header {
 
 footer {
     background: black;
-    padding: 10px 0 10px 30px;
+    padding: 13px 0 13px 30px;
     color: #cccccc;
     position: relative;
     /* Ensure it's relative to the body */
@@ -127,13 +127,12 @@ footer {
     /* Clear floats */
 }
 
-footer p {
-    font-size: 10px;
-}
-
-
 .social-icon {
     color: #cccccc;
-    font-size: 6px;
     margin-left: 20px;
+}
+
+.copyright{
+    font-size: 12px;
+    margin-left: 25px;
 }
