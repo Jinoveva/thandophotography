@@ -2,6 +2,8 @@ body {
     background: #121212;
     font-family: "Inter", sans-serif;
     margin: 0;
+    padding-top: 80px;
+    /* Adjust the padding-top to accommodate the fixed header height */
 }
 
 h1 {
@@ -95,40 +97,40 @@ header {
     font-size: 15px;
 }
 
+.all-about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 150px 20px 0;
+}
+
 .about-container {
     display: flex;
-    justify-content: space-between;
-    /* Ensure items are spaced apart */
-    align-items: flex-start;
-    /* Align items to the start of the container */
-    padding: 40px;
-    margin-right: 150px;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
 }
 
 .about-details {
     background-color: #454545;
-    padding: 80px;
-    margin-right: -100px;
-    margin-top: 150px;
-    /* Adjust to overlap with image */
+    padding: 20px;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
     z-index: 1;
-    width: 400px;
-    height: 350px;
-    /* Adjust width as needed */
 }
 
 .image {
-    position: relative;
+    margin-top: -100px;
     z-index: 0;
-    flex: 1;
-    /* Ensure image takes up remaining space */
-    margin-left: 20px;
-    /* Adjust spacing between details and image */
+    width: 100%;
+    max-width: 400px;
 }
 
 .about-img {
-    width: 120%;
-    /* Ensures the image fills its container */
+    width: 100%;
+    height: auto;
     display: block;
 }
 
@@ -137,9 +139,7 @@ header {
     font-weight: 300;
     font-size: 20px;
     color: #cccccc;
-    display: block;
     margin-bottom: 10px;
-    text-align: center;
 }
 
 .name {
@@ -147,8 +147,6 @@ header {
     font-weight: 400;
     font-size: 35px;
     color: #cccccc;
-    display: block;
-    text-align: center;
 }
 
 .description {
@@ -156,16 +154,13 @@ header {
     font-weight: 300;
     font-size: 15px;
     color: #cccccc;
-    display: block;
     line-height: 1.5;
-    text-align: center;
-    padding: 20px;
+    padding: 10px;
 }
 
 .button-container {
     display: flex;
     justify-content: center;
-    align-items: center;
     margin-top: 20px;
 }
 
@@ -189,9 +184,7 @@ footer {
     padding: 13px 0 13px 30px;
     color: #cccccc;
     position: relative;
-    /* Ensure it's relative to the body */
     clear: both;
-    /* Clear floats */
 }
 
 .social-icon {
@@ -204,7 +197,29 @@ footer {
     margin-left: 25px;
 }
 
-.all-about{
-    margin-left: 200px;
-    margin-top: 300px;
+/* Media Queries */
+@media (min-width: 768px) {
+    .about-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .about-details {
+        margin-top: 150px;
+        margin-right: -100px;
+        width: 400px;
+    }
+
+    .image {
+        margin-left: 20px;
+    }
+
+    .about-img {
+        width: 120%;
+    }
+
+    .all-about {
+        margin-top: 300px;
+        margin-left: 200px;
+    }
 }
