@@ -200,7 +200,7 @@ footer {
 /* Media Queries */
 @media (min-width: 768px) {
     .about-container {
-        flex-direction: column;
+        flex-direction: row;
         justify-content: space-between;
     }
 
