@@ -1,3 +1,4 @@
+/* General styles */
 body {
     background: #121212;
     font-family: "Inter", sans-serif;
@@ -95,37 +96,74 @@ header {
     font-size: 15px;
 }
 
+/* Main content layout */
+.content {
+    display: flex;
+    flex-direction: column;
+    /* Default: stack items vertically */
+    align-items: center;
+    /* Center items horizontally */
+    margin-top: 100px;
+}
+
+.image {
+    width: 90%;
+    /* Take up 90% width on smaller screens */
+    max-width: 600px;
+    /* Limit width on larger screens */
+    margin: 20px 0;
+    /* Adjust margins */
+}
+
+.contact-form {
+    width: 90%;
+    /* Take up 90% width on smaller screens */
+    max-width: 600px;
+    /* Limit width on larger screens */
+    margin: 20px 0;
+    /* Adjust margins */
+}
+
 .about-img {
     width: 100%;
+    /* Ensure image spans full width */
     height: auto;
-    margin: 50px 0 30px 50px;
+    /* Maintain aspect ratio */
+    margin: 20px 0;
+    /* Adjust margins */
 }
 
-footer {
-    background: black;
-    padding: 13px 0 13px 30px;
-    color: #cccccc;
-    position: relative;
-    /* Ensure it's relative to the body */
-    clear: both;
-    /* Clear floats */
+/* Media queries for responsiveness */
+@media screen and (min-width: 768px) {
+
+    /* Medium screens and larger */
+    .content {
+        flex-direction: row;
+        /* Arrange items horizontally */
+        justify-content: space-around;
+        /* Distribute items evenly */
+    }
+
+    .image,
+    .contact-form {
+        width: 45%;
+        /* 45% width each for two-column layout */
+        max-width: none;
+        /* Remove max-width */
+        margin: 0 10px;
+        /* Adjust margins between items */
+    }
 }
 
-.social-icon {
-    color: #cccccc;
-    margin-left: 20px;
-}
+@media screen and (min-width: 1200px) {
 
-.copyright {
-    font-size: 12px;
-    margin-left: 25px;
-}
-
-.roboto-regular {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 50px;
+    /* Large screens */
+    .content {
+        flex-direction: row;
+        /* Ensure items are in row */
+        justify-content: space-between;
+        /* Space items apart */
+    }
 }
 
 .name,
