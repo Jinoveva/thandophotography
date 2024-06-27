@@ -97,20 +97,6 @@ header {
     font-size: 15px;
 }
 
-.image {
-    position: relative;
-    z-index: 0;
-    flex: 1;
-    /* Ensure image takes up remaining space */
-    margin-left: 20px;
-    /* Adjust spacing between details and image */
-}
-
-.about-img {
-    width: 100%;
-    /* Ensures the image fills its container */
-    display: block;
-}
 
 footer {
     background: black;
