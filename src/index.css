@@ -2,7 +2,7 @@ body {
     background: #121212;
     font-family: "Inter", sans-serif;
     margin: 0;
-    padding-top: 80px;
+    padding-top: 150px;
     /* Adjust the padding-top to accommodate the fixed header height */
 }
 
@@ -28,8 +28,9 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 10px 0;
+    padding: 10px 50px -100px 50px;
     border-style: none;
+    margin-bottom: 100px;
 }
 
 .tabs {
@@ -100,23 +101,28 @@ header {
 .image-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-    /* Adjust the gap between the images as needed */
+    gap: 30px;
+    /* Increase the gap between the images */
+    padding: 30px;
+    /* Increase padding around the entire image container */
 }
 
 .image-container>div {
     width: 100%;
-    /* Adjust the aspect ratio as needed */
     aspect-ratio: 4 / 6;
+    /* Keep the aspect ratio as 4/6 */
     overflow: hidden;
     position: relative;
-    padding: 50px;
+    padding: 0;
+    /* Remove padding inside each grid item */
+    margin-top: 50px;
 }
 
 .image-container img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    /* Ensure the full image is shown within the container */
 }
 
 footer {
@@ -138,4 +144,3 @@ footer {
     font-size: 12px;
     margin-left: 25px;
 }
-
