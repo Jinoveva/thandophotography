@@ -98,25 +98,25 @@ header {
 }
 
 .image-container {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 200px;
-    margin-left: 80px;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    /* Adjust the gap between the images as needed */
 }
 
 .image-container>div {
-    flex: 1 1 calc(50% - 10px);
-    /* Adjust to 50% width for 2 images per line with space between */
-    box-sizing: border-box;
-    padding: 5px;
-    /* Add some space between images */
+    width: 100%;
+    /* Adjust the aspect ratio as needed */
+    aspect-ratio: 4 / 6;
+    overflow: hidden;
+    position: relative;
+    padding: 50px;
 }
 
 .image-container img {
     width: 100%;
-    height: auto;
-    display: block;
+    height: 100%;
+    object-fit: cover;
 }
 
 footer {
@@ -139,29 +139,3 @@ footer {
     margin-left: 25px;
 }
 
-/* Media Queries */
-@media (max-width: 768px) {
-    .image-container {
-        margin-left: 0;
-        margin-top: 150px;
-    }
-
-    .image-container>div {
-        flex: 1 1 calc(100% - 10px);
-        /* Adjust to 100% width for single column layout */
-    }
-
-    h1 {
-        font-size: 40px;
-        padding: 20px;
-    }
-
-    .tabs {
-        font-size: 11px;
-        margin: -50px 0 0 0;
-    }
-
-    header {
-        padding: 5px 0;
-    }
-}
