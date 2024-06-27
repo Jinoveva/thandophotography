@@ -1,6 +1,6 @@
 body {
     background: #121212;
-    font-family: "Inter", sans-serif;
+    font-family: "Raleway", sans-serif;
     margin: 0;
 }
 
@@ -106,6 +106,16 @@ header {
     margin-top: 100px;
 }
 
+.raleway{
+    font-family: "Raleway", sans-serif;
+    color: #cccccc;
+}
+
+.contact-details{
+    font-family: "Raleway", sans-serif;
+    color: #cccccc;
+}
+
 .image {
     width: 90%;
     /* Take up 90% width on smaller screens */
@@ -191,12 +201,6 @@ footer {
     margin-left: 25px;
 }
 
-.roboto-regular {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 50px;
-}
 
 .name,
 .email,
@@ -250,11 +254,6 @@ h2 {
     margin: 20px;
 }
 
-.roboto-light{
-    font-family: "Roboto", sans-serif;
-        font-weight: 300;
-        font-style: normal;
-}
 
 .first-name, .last-name{
 padding: 15px 80px 15px 0;
