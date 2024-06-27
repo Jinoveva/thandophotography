@@ -152,9 +152,9 @@ header {
 .row-2 .image3,
 .row-2 .image4 {
     flex: 1 1 calc(50% - 20px);
-    max-width: calc(50% - 20px);
+    max-width: calc(48% - 20px);
     /* Adjust the max-width for larger images */
-    max-height: calc(100% - 20px);
+    max-height: calc(800% - 20px);
     /* Adjust the max-height if needed */
     box-sizing: border-box;
     position: relative;
