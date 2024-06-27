@@ -114,6 +114,22 @@ header {
     margin-top: 50px;
 }
 
+.portfolio-section a {
+    display: block;
+    /* Ensures the anchor tag takes up the entire space of the image and text */
+    text-decoration: none;
+    /* Remove default underline */
+    color: #cccccc;
+    /* Text color */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+}
+
+.portfolio-section a:hover {
+    text-decoration: underline;
+    /* Underline on hover if desired */
+}
+
 .portfolio-row1,
 .portfolio-row2 {
     display: flex;
