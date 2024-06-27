@@ -122,15 +122,14 @@ footer {
     /* Clear floats */
 }
 
-.social-icon {
+.ig-social-icon,
+.fa.fa-envelope,
+.fa.fa-whatsapp {
     color: #cccccc;
-    margin-left: 20px;
+    margin-left: 10px;
+    /* Adjusted margin-left for equal spacing */
     margin-right: 10px;
-}
-
-.fa fa-envelope {
-    color: #cccccc;
-    margin-left: 50px;
+    /* Adjusted margin-right for equal spacing */
 }
 
 .copyright {
