@@ -1,6 +1,5 @@
 body {
     background: #121212;
-    font-family: "Inter", sans-serif;
     margin: 0;
     padding-top: 150px;
     /* Adjust the padding-top to accommodate the fixed header height */
@@ -25,6 +24,7 @@ font-family: "Raleway", sans-serif;
 }
 
 header {
+    font-family: "Inter", sans-serif;
     width: 100%;
     background-color: rgba(18, 18, 18, 0.01);
     box-shadow: none;
@@ -51,6 +51,7 @@ header {
 }
 
 .tabs li {
+    font-family: "Raleway", sans-serif;
     margin: 0 10px;
     position: relative;
 }
@@ -144,15 +145,15 @@ header {
 
 .portfolio-image+h2 {
     margin-top: 10px;
-    /* Add margin between image and heading */
     color: #cccccc;
-    /* Adjust heading color */
     font-family: "Raleway", sans-serif;
-    /* Apply font */
     font-weight: 200;
-    /* Adjust font weight */
     font-size: 18px;
-    /* Adjust font size */
+}
+
+.portfolio-description {
+    font-weight: bolder;
+    /* Adjust font weight */
 }
 
 @media (max-width: 768px) {
@@ -160,9 +161,7 @@ header {
     .portfolio-row1,
     .portfolio-row2 {
         flex-direction: column;
-        /* Stack items vertically on smaller screens */
         align-items: center;
-        /* Center-align items */
     }
 }
 

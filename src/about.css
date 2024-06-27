@@ -43,6 +43,7 @@ header {
 }
 
 .tabs li {
+    font-family: "Raleway", sans-serif;
     margin: 0 10px;
     position: relative;
 }
