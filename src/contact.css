@@ -178,6 +178,12 @@ footer {
 .social-icon {
     color: #cccccc;
     margin-left: 20px;
+    margin-right: 10px;
+}
+
+.fa fa-envelope {
+    color: #cccccc;
+    margin-left: 50px;
 }
 
 .copyright {
