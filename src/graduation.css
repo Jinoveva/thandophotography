@@ -2,14 +2,11 @@ body {
     background: #121212;
     font-family: "Inter", sans-serif;
     margin: 0;
-    padding-top: 150px;
-    /* Adjust the padding-top to accommodate the fixed header height */
+    padding-top: 20px;
 }
 
 h1 {
-    font-optical-sizing: auto;
     font-weight: 700;
-    font-style: normal;
     font-size: 60px;
     color: #cccccc;
     text-align: center;
@@ -17,10 +14,10 @@ h1 {
 }
 
 header {
+    position: fixed;
     width: 100%;
     background-color: rgba(18, 18, 18, 0.01);
     box-shadow: none;
-    position: fixed;
     top: 0;
     left: 0;
     z-index: 1000;
@@ -28,9 +25,15 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 10px 50px -100px 50px;
+    padding: 0;
     border-style: none;
-    margin-bottom: 100px;
+}
+
+.header-hr {
+    border: none;
+    border-top: 2px solid #fff;
+    width: 100%;
+    margin: 0;
 }
 
 .tabs {
@@ -99,14 +102,88 @@ header {
     font-size: 15px;
 }
 
+.graduation-img-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* Center horizontally */
+    gap: 20px;
+    margin-top: 200px;
+    width: 100%;
+    margin-left: auto;
+    /* Align container to center */
+    margin-right: auto;
+    /* Align container to center */
+
+}
+
+.row-1,
+.row-2 {
+    display: flex;
+    justify-content: space-around;
+    /* Distribute images evenly */
+    gap: 20px;
+    width: 100%;
+}
+
+.graduation-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.graduation-img:hover {
+    transform: scale(1.1);
+    /* Adjust the scale factor as desired */
+}
+
+.row-1 .graduation-img,
+.row-2 .graduation-img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4/5;
+    /* Adjust the aspect ratio if needed */
+    object-fit: cover;
+}
+
+.row-1 .image1,
+.row-1 .image2,
+.row-2 .image3,
+.row-2 .image4 {
+    flex: 1 1 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+    /* Adjust the max-width for larger images */
+    max-height: calc(100% - 20px);
+    /* Adjust the max-height if needed */
+    box-sizing: border-box;
+    position: relative;
+}
+
+@media (max-width: 768px) {
+
+    .row-1 .image1,
+    .row-1 .image2,
+    .row-2 .image3,
+    .row-2 .image4{
+        flex: 1 1 calc(100% - 20px);
+        max-width: calc(100% - 20px);
+    }
+}
+
+.container-hr {
+    border: none;
+    border-top: 2px solid #fff;
+    width: 100%;
+    margin: 20px 0 0 0;
+}
+
 footer {
     background: black;
     padding: 13px 0 13px 30px;
     color: #cccccc;
     position: relative;
-    /* Ensure it's relative to the body */
     clear: both;
-    /* Clear floats */
 }
 
 .ig-social-icon,
@@ -114,9 +191,7 @@ footer {
 .fa.fa-whatsapp {
     color: #cccccc;
     margin-left: 10px;
-    /* Adjusted margin-left for equal spacing */
     margin-right: 10px;
-    /* Adjusted margin-right for equal spacing */
 }
 
 .copyright {
