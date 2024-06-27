@@ -1,5 +1,6 @@
 body {
     background: #121212;
+    font-family: "Inter", sans-serif;
     margin: 0;
     padding-top: 150px;
     /* Adjust the padding-top to accommodate the fixed header height */
@@ -15,16 +16,7 @@ h1 {
     padding: 40px;
 }
 
-h2{
-font-family: "Raleway", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 200;
-    font-style: normal;
-    color: #cccccc;
-}
-
 header {
-    font-family: "Inter", sans-serif;
     width: 100%;
     background-color: rgba(18, 18, 18, 0.01);
     box-shadow: none;
@@ -36,8 +28,9 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 10px 0;
+    padding: 10px 50px -100px 50px;
     border-style: none;
+    margin-bottom: 100px;
 }
 
 .tabs {
@@ -105,85 +98,6 @@ header {
     color: #cccccc;
     font-size: 15px;
 }
-
-.portfolio-section {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    /* Adjust spacing between rows */
-    margin-top: 50px;
-}
-
-.portfolio-section a {
-    display: block;
-    /* Ensures the anchor tag takes up the entire space of the image and text */
-    text-decoration: none;
-    /* Remove default underline */
-    color: #cccccc;
-    /* Text color */
-    cursor: pointer;
-    /* Pointer cursor on hover */
-}
-
-.portfolio-section a:hover {
-    text-decoration: underline;
-    /* Underline on hover if desired */
-        transform: scale(1.1);
-            /* Scale up by 10% on hover */
-}
-
-.portfolio-row1,
-.portfolio-row2 {
-    display: flex;
-    justify-content: space-around;
-    /* Distribute items evenly across row */
-    gap: 20px;
-    /* Adjust spacing between images */
-    text-align: center;
-    /* Center-align text */
-}
-
-.portfolio-row1 {
-    margin-bottom: 20px;
-    padding: 30px;
-}
-
-.portfolio-row2 {
-    margin-top: 20px;
-    padding: 30px;
-}
-
-.portfolio-image {
-    width: 120%;
-    /* Ensure images take full width of their container */
-    max-height: 400px;
-    /* Maintain aspect ratio */
-    object-fit: cover;
-}
-
-.portfolio-image+h2 {
-    margin-top: 10px;
-    color: #cccccc;
-    font-family: "Raleway", sans-serif;
-    font-weight: 200;
-    font-size: 18px;
-}
-
-
-.portfolio-description {
-    font-weight: bolder;
-    /* Adjust font weight */
-}
-
-@media (max-width: 768px) {
-
-    .portfolio-row1,
-    .portfolio-row2 {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
 
 footer {
     background: black;
