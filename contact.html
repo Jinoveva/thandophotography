@@ -52,51 +52,51 @@
         <div class="image">
             <img src="nothando-contact.jpg" alt="About Image" class="about-img">
         </div>
-
+    
         <div class="contact-form">
             <h2 class="raleway">GET IN TOUCH</h2>
             <p class="contact-details">FOR ENQUIRIES OR TO MAKE A BOOKING PLEASE FILL IN THE FORM BELOW.</p>
-            <label for="name" class="name roboto-light">Name</label>
-            <br>
-            <input type="text" class="first-name" placeholder="First Name" required>
-            <input type="text" class="last-name" placeholder="Last Name" required>
-            <br>
-            <br>
-            <br>
-            <label for="email" class="email roboto-light">Email</label>
-            <br>
-            <input type="text" class="email" placeholder="Email address" required>
-            <br>
-            <br>
-            <br>
-            <label for="message" class="message roboto-light">Message</label>
-            <br>
-            <input type="text" class="message-holder">
-            <br>
-            <br>
-            <br>
-            <button class="contact-form-button">Submit</button>
+            <form id="contactForm">
+                <label for="name" class="name roboto-light">Name</label>
+                <br>
+                <input type="text" name="firstName" class="first-name" placeholder="First Name" required>
+                <input type="text" name="lastName" class="last-name" placeholder="Last Name" required>
+                <br>
+                <br>
+                <br>
+                <label for="email" class="email roboto-light">Email</label>
+                <br>
+                <input type="email" name="email" class="email" placeholder="Email address" required>
+                <br>
+                <br>
+                <br>
+                <label for="message" class="message roboto-light">Message</label>
+                <br>
+                <textarea name="message" class="message-holder"></textarea>
+                <br>
+                <br>
+                <br>
+                <button type="submit" class="contact-form-button">Submit</button>
+            </form>
         </div>
     </div>
-
+    
     <div class="footer">
-<footer>
-
-    <a href="https://www.instagram.com/j.u.s.t_s.n.a.p.s?utm_source=qr&igsh=MWl1a2xkYzV2MGNzNA==" target="_blank"
-        class="ig-social-icon">
-        <i style="font-size:16px" class="fa">&#xf16d;</i>
-    </a>
-    <a href="mailto:Thandohphotography@gmail.com" target="_blank">
-        <i class="fa fa-envelope" style="font-size:16px;color:#ccc"></i>
-    </a>
-    <a href="https://wa.me/message/V5NPZ335UWN5M1" target="_blank">
-        <i class="fa fa-whatsapp" style="font-size:16px;color:#ccc"></i>
-    </a>
-    <span class="copyright">copyright &copy; thandophotography 2024</span>
-
-</footer>
+        <footer>
+            <a href="https://www.instagram.com/j.u.s.t_s.n.a.p.s?utm_source=qr&igsh=MWl1a2xkYzV2MGNzNA==" target="_blank"
+                class="ig-social-icon">
+                <i style="font-size:16px" class="fa">&#xf16d;</i>
+            </a>
+            <a href="mailto:Thandohphotography@gmail.com" target="_blank">
+                <i class="fa fa-envelope" style="font-size:16px;color:#ccc"></i>
+            </a>
+            <a href="https://wa.me/message/V5NPZ335UWN5M1" target="_blank">
+                <i class="fa fa-whatsapp" style="font-size:16px;color:#ccc"></i>
+            </a>
+            <span class="copyright">copyright &copy; thandophotography 2024</span>
+        </footer>
     </div>
-<script src="src/contact.js"></script>
-</body>
-
-</html>
+    <script src="src/contact.js"></script>
+    </body>
+    
+    </html>
