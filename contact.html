@@ -56,7 +56,7 @@
         <div class="contact-form">
             <h2 class="raleway">GET IN TOUCH</h2>
             <p class="contact-details">FOR ENQUIRIES OR TO MAKE A BOOKING PLEASE FILL IN THE FORM BELOW.</p>
-            <form id="contactForm">
+            <form id="contactForm" onsubmit="sendEmail (); reset (); return false;">
                 <label for="name" class="name roboto-light">Name</label>
                 <br>
                 <input type="text" name="firstName" class="first-name" placeholder="First Name" required>
@@ -66,7 +66,7 @@
                 <br>
                 <label for="email" class="email roboto-light">Email</label>
                 <br>
-                <input type="email" name="email" class="email" placeholder="Email address" required>
+                <input type="email" name="email" id="email" class="email" placeholder="Email address" required>
                 <br>
                 <br>
                 <br>
@@ -96,6 +96,8 @@
             <span class="copyright">copyright &copy; thandophotography 2024</span>
         </footer>
     </div>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
     <script src="src/contact.js"></script>
     </body>
     
