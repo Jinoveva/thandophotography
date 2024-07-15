@@ -1,3 +1,4 @@
+/* Global styles */
 body {
     background: #121212;
     font-family: "Inter", sans-serif;
@@ -98,6 +99,7 @@ header {
     font-size: 15px;
 }
 
+/* About section */
 .all-about {
     display: flex;
     flex-direction: column;
@@ -107,26 +109,36 @@ header {
 
 .about-container {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    /* Initial side-by-side layout */
     align-items: center;
     padding: 20px;
+    flex-wrap: wrap;
+    /* Allow items to wrap */
 }
 
 .about-details {
     background-color: #454545;
     padding: 20px;
     margin-top: 20px;
-    width: 100%;
     max-width: 400px;
     text-align: center;
     z-index: 1;
+    flex: calc(50% - 10px);
+    /* Adjust width for smaller screens */
+    margin: 0 5px;
+    /* Add spacing between items */
 }
 
 .image {
     margin-top: -100px;
-    z-index: 0;
-    width: 100%;
+    /* Example margin, adjust as needed */
     max-width: 400px;
+    z-index: 0;
+    flex: calc(50% - 10px);
+    /* Adjust width for smaller screens */
+    margin: 0 5px;
+    /* Add spacing between items */
 }
 
 .about-img {
@@ -144,7 +156,7 @@ header {
 }
 
 .name {
-font-family: "Raleway", sans-serif;
+    font-family: "Raleway", sans-serif;
     font-weight: 400;
     font-size: 35px;
     color: #cccccc;
@@ -180,6 +192,7 @@ button:hover {
     background-color: #444;
 }
 
+/* Footer */
 footer {
     background: black;
     padding: 13px 0 13px 30px;
@@ -204,28 +217,23 @@ footer {
 }
 
 /* Media Queries */
-@media (min-width: 768px) {
-    .about-container {
-        flex-direction: row;
-        justify-content: space-between;
+@media (max-width: 768px) {
+
+    .about-details,
+    .image {
+        flex: calc(50% - 10px);
+        /* Adjust width for smaller screens */
+        margin: 0 5px;
+        /* Add spacing between items */
     }
 
     .about-details {
-        margin-top: -70px;
-        margin-right: -100px;
-        width: 400px;
+        margin-top: 20px;
+        /* Adjust margin if needed */
     }
 
     .image {
-        margin-left: 20px;
-    }
-
-    .about-img {
-        width: 120%;
-    }
-
-    .all-about {
-        margin-top: 300px;
-        margin-left: 200px;
+        margin-top: -100px;
+        /* Example margin, adjust as needed */
     }
 }
